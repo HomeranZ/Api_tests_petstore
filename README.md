@@ -17,6 +17,7 @@
 
 
 ## Структура
+'''
 api-tests-petstore/
 ├── tests/
 │ ├── init.py
@@ -25,6 +26,7 @@ api-tests-petstore/
 ├── pytest.ini # конфигурация pytest
 ├── requirements.txt # зависимости
 └── README.md
+'''
 
 
 ## Особенности
