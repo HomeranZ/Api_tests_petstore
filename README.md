@@ -36,20 +36,20 @@ api-tests-petstore/
 ## Как запустить
 
 ### 1. Клонировать
-```bash
+````bash
 git clone https://github.com/HomeranZ/Api_tests_petstore.git
 cd Api_tests_petstore
-```
+````
 
 ### 2. Установить зависимости
-```bash
+````bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-```
+````
 
 ### 3. Запустить тесты
-```bash
+````bash
 # всё
 python -m pytest
 
@@ -58,9 +58,9 @@ python -m pytest -m smoke
 
 # только негативные
 python -m pytest -m negative
-```
+````
 
 ## Результат
-```
+````
 16 passed in 2.36s
-```
+````
