@@ -11,3 +11,5 @@ htmlcov/
 .coverage
 allure-results/
 *.log
+allure-results/
+allure-report/

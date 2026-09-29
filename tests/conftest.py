@@ -27,7 +27,7 @@ def base_url():
 
 
 @pytest.fixture
-def create_post(api_client, base_url):
+def created_post(api_client, base_url):
     """
     Создает до и удаляет после тестов.
     scope по умолчанию - function (новый для каждого теста).
@@ -38,11 +38,11 @@ def create_post(api_client, base_url):
         "userId": 1
     }
     response = api_client.post(f"{base_url}/posts", json=new_post)
-    assert response.status_code == 201,f"Не удалось создать пост: {response.status_code}"
+    assert response.status_code == 201, f"Не удалось создать пост: {response.status_code}"
 
     post = response.json()
     yield post
+
     #cleanup Удаляем пост после теста
-    # (jsonplaceholder не сохраняет, а для примера, что делать)
     api_client.delete(f"{base_url}/posts/{post['id']}")
 
