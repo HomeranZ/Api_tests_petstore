@@ -65,8 +65,9 @@ jobs:
           path: gh-pages
 
       - name: Generate Allure report
-        uses: andgineer/allure-report@v3.6
+        uses: simple-elf/allure-report-action@v1.15
         if: always()
+        id: allure-report
         with:
           allure_results: allure-results
           allure_history: allure-history
@@ -74,7 +75,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         if: always()
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
