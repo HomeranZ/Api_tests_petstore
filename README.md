@@ -1,3 +1,9 @@
+## 📊 Отчёты и статус
+
+[![Tests](https://github.com/HomeranZ/Api_tests_petstore/actions/workflows/tests.yml/badge.svg)](https://github.com/HomeranZ/Api_tests_petstore/actions/workflows/tests.yml)
+[![Allure Report](https://img.shields.io/badge/Allure-Report-blue)](https://homeranz.github.io/Api_tests_petstore/)
+
+📈 **[Открыть Allure-отчёт](https://homeranz.github.io/Api_tests_petstore/)**
 # API Tests — jsonplaceholder
 
 [![Tests](https://github.com/HomeranZ/Api_tests_petstore/actions/workflows/tests.yml/badge.svg)](https://github.com/HomeranZ/Api_tests_petstore/actions/workflows/tests.yml)
